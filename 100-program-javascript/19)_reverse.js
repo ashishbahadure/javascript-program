@@ -1,0 +1,1 @@
+//program to reverse a number using for loop 

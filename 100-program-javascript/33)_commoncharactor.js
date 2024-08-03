@@ -1,0 +1,1 @@
+//How to print the common character in array in c language

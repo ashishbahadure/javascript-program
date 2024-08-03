@@ -1,0 +1,43 @@
+<!-- // 022. Write a program to calculate roots of a quadratic equations in C language 
+
+// find The Roots Of Quadratic Formula In JavaScript 
+
+
+// x=-b +/- -b2-4ac /2a -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+const a = prompt("enter the value a")
+const b = prompt("enter the value b")
+const c = prompt("enter the value c")
+
+const d = b*b -4*a*c;
+let root1,root2;
+if(d >0){
+    root1 = -b +(Math.sqrt(d))/(2*a);
+    root2 = -b -(Math.sqrt(d))/(2*a);
+
+    console.log(`the roots are ${root1} & ${root2}`);
+
+}
+
+if( d == 0){
+
+    root1 = root2 = -b/(2* a);
+
+    console.log(`the roots are ${root1} & ${root2}`);
+
+}
+
+    </script>
+</body>
+</html>

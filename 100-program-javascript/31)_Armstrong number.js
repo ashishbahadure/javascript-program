@@ -1,0 +1,1 @@
+// 031. Write a program to accept a number from user and check if it is Armstrong number or not i.e. 153 = 1^3 + 5^3 + 3^3 = 153 in C language

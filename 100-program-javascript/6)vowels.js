@@ -1,0 +1,1 @@
+// provide string and seperate vowels from array 

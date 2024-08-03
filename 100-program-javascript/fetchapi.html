@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="callapi()">click</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>title</th>
+                <th>title</th>
+                <th>title</th>
+            </tr>
+        </thead>
+        <tbody id="userdata"></tbody>
+
+    </table>
+    <script>
+       async function callapi(){
+            let result =await fetch('https://jsonplaceholder.typicode.com/todos')
+            result= await result.json()
+    //   .then(response => response.json())
+    //   .then(json => console.log(json))
+    console.log(result)
+     document.getElementById('userdata').innerHTML=
+      result.map((user)=>
+            `<tr>
+            <td>${user.title}</td>    
+            <td>${user.completed}</td>    
+            <td>${user.userId}</td>    
+            <td>${user.id}</td>    
+            </tr>`
+        ).join("")
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+// 032. Write a program to print table of a given number n in C language 

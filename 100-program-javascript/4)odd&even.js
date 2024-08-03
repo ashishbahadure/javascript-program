@@ -1,0 +1,1 @@
+// seperate odd and even from array 

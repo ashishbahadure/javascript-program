@@ -1,0 +1,1 @@
+//program that checks whether a number is proime or not using a for loop 
